@@ -1,17 +1,18 @@
 from stats_util import s_mean_confidence_interval
 from parser import parse_repetition
 import json
+import sys
 
-REPETITIONS = 35
-
-def parse_scenario(scenario):
+def parse_scenario(scenario, reps = 35):
 
     scenario_results = {}
     scenario_ci = {}
     outcomes = {}
 
-    for i in range(0, REPETITIONS):
+    for i in range(0, reps):
         results = parse_repetition(scenario + "-#" + str(i))
+        if results == None:
+            continue
         for metric in results:
             if not metric in scenario_results:
                 scenario_results[metric] = []
@@ -31,3 +32,6 @@ def parse_scenario(scenario):
 
     with open(f"analysis/{scenario.split('/')[-1]}.json", "a") as file:
         file.write(json.dumps(scenario_ci, indent=4))
+        
+if __name__ == "__main__":
+    parse_scenario(sys.argv[1], int(sys.argv[2]))
