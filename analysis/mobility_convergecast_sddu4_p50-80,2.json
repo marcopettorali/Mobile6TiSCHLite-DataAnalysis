@@ -1,0 +1,102 @@
+{
+    "Upstream PDR": [
+        0.0772105466911326,
+        0.08153360915302325
+    ],
+    "Downstream PDR": [
+        0.0,
+        0.0
+    ],
+    "TicToc PDR": [
+        0.0,
+        0.0
+    ],
+    "Packets retransmitted per node AVG": [
+        0.0,
+        0.0
+    ],
+    "Counter of retransmission per packet AVG": [
+        0.0,
+        0.0
+    ],
+    "Intertime of retransmissions AVG": [
+        0.0,
+        0.0
+    ],
+    "Packets delivered": [
+        0.08745573931543207,
+        0.09153544812489328
+    ],
+    "Packets lost due to noise": [
+        0.0567871304045228,
+        0.0590616019156304
+    ],
+    "Packets collided": [
+        -1.7730139141720007e-06,
+        6.662686857345153e-06
+    ],
+    "Destinatary out of range": [
+        -3.914537890126029e-06,
+        2.5307847556784684e-05
+    ],
+    "Packets dropped": [
+        0.0,
+        0.0
+    ],
+    "Other causes of loss": [
+        0.8495501814052975,
+        0.8555836158516144
+    ],
+    "Queue MN Avg": [
+        0.3824618967320262,
+        0.3825099586589384
+    ],
+    "Queue MN Var": [
+        4.831275584511972e-07,
+        5.250961449632612e-07
+    ],
+    "Queue BR Avg": [
+        0.0,
+        0.0
+    ],
+    "Queue BR Var": [
+        0.0,
+        0.0
+    ],
+    "Upstream Delay Avg": [
+        0.7572691244993048,
+        0.7593052060144592
+    ],
+    "Upstream Delay 95th Perc": [
+        1.440032757600917,
+        1.4418560276146262
+    ],
+    "Upstream Delay Var": [
+        0.19099865649855233,
+        0.19182473500173505
+    ],
+    "Downstream Delay Avg": [
+        0.0,
+        0.0
+    ],
+    "Downstream Delay 95th Perc": [
+        0.0,
+        0.0
+    ],
+    "Downstream Delay Var": [
+        0.0,
+        0.0
+    ],
+    "RTT Avg": [
+        0.0,
+        0.0
+    ],
+    "RTT 95th Perc": [
+        0.0,
+        0.0
+    ],
+    "RTT Var": [
+        0.0,
+        0.0
+    ]
+}
