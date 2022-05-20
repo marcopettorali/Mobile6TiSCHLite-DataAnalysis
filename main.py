@@ -4,9 +4,11 @@ from itertools import product
 
 name = f"/home/ubuntu/git/Mobile6TiSCH-Lite/Mobile6TiSCH-Lite/simulations/mobile6tischlite/results"
 
-parse_scenario(name + f"/speed_reqres_dddu_p75-100,0.5mps")
-parse_scenario(name + f"/speed_reqres_dddu_p75-100,2mps")
-parse_scenario(name + f"/speed_reqres_dddu_p75-100,5mps")
+parse_scenario(name + f"/mobility_convergecast_sddu4_p75-90,2")
+parse_scenario(name + f"/mobility_convergecast_sddu4_p75-100,0")
+parse_scenario(name + f"/mobility_convergecast_sddu4_p75-100,1")
+parse_scenario(name + f"/mobility_convergecast_sddu4_p75-100,2")
+
 exit()
 
 for s, p, mn, m in product(["convergecast_sddu4", "reqres_dddu"], [25,50,75], list(range(10,110,10)), [0,1,2]) :
