@@ -30,8 +30,9 @@ def parse_scenario(scenario, reps = 35):
             low, high = s_mean_confidence_interval(scenario_results[key])
             scenario_ci[key] = [low, high]
 
-    with open(f"analysis/{scenario.split('/')[-1]}.json", "a") as file:
+    with open(f"./analysis/{scenario.split('/')[-1]}.json", "a") as file:
         file.write(json.dumps(scenario_ci, indent=4))
         
-if __name__ == "__main__":
-    parse_scenario(sys.argv[1], int(sys.argv[2]))
+if __name__=="__main__":
+    if len(sys.argv) > 2:
+        parse_scenario(sys.argv[1], int(sys.argv[2]))
