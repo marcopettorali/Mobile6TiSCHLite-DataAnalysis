@@ -4,7 +4,7 @@ from itertools import product
 
 name = f"/home/ubuntu/git/Mobile6TiSCH-Lite/Mobile6TiSCH-Lite/simulations/mobile6tischlite/results"
 
-for s, p, mn, m in product(["convergecast_sddu4", "reqres_dddu"], [25,50,75], list(range(10,110,10)), [0,1,2]) :
+for s, p, mn in product(["convergecast_sddu4", "reqres_dddu"], [25,50,75], list(range(10,110,10))) :
     parse_scenario(name + f"/mobility_{s}_p{p}_wc-{mn}")
 exit()
 for s, p, mn, sp in product(["convergecast_sddu4", "reqres_dddu"], [25,50,75], list(range(10,110,10)), [0.5,2,5]) :
